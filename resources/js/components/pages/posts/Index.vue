@@ -29,6 +29,19 @@
             </tbody>
         </table>
 
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+
+                <li v-for="link in pagination.links"
+                    :class="{ active: link.active, disabled: !link.url }"
+                    @click.prevent="getPosts(link.url)"
+                    class="page-item"><a class="page-link" href="#">
+                    <span v-html="link.label"></span>
+                </a></li>
+
+            </ul>
+        </nav>
+
     </div>
 </template>
 
@@ -53,15 +66,31 @@ export default {
         this.getPosts()
     },
     methods: {
-        getPosts() {
+        getPosts(page_url) {
+            page_url = page_url || '/api/posts'
+
             axios
-                .get('/api/posts')
-                .then(response => this.posts = response.data.data)
+                .get(page_url)
+                .then(response => {
+                    this.posts = response.data.data
+                    this.makePagination(response.data)
+                })
                 .catch(error => {
                     console.log(error)
                     this.errored = true
                 })
                 .finally(() => this.loading = false)
+        },
+        makePagination(response) {
+            let pagination = {
+                current_page: response.current_page,
+                last_page: response.last_page,
+                prev_page_url: response.prev_page_url,
+                next_page_url: response.next_page_url,
+                links: response.links
+            }
+
+            this.pagination = pagination
         }
     }
 }
