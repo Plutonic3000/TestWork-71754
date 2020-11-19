@@ -24,7 +24,7 @@ class PostFactory extends Factory
         return [
             'title' => $this->faker->realText(20),
             'descr' => $this->faker->realText(100),
-            'created_at' => date('Y-m-d H:i:s', strtotime('-'.rand(1,10).' minutes')),
+            'created_at' => now()->addMinutes(rand(0,37)),//date('Y-m-d H:i:s', strtotime('-'.rand(1,10).' minutes')),
             'updated_at' => now(),
         ];
     }

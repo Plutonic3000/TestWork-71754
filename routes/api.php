@@ -18,4 +18,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('posts', '\App\Http\Controllers\API\PostController'); // index
+//Route::apiResource('posts', '\App\Http\Controllers\API\PostController'); // Without Auth
+
+/*
+ * PASSPORT ROUTES
+ */
+Route::post('/register', '\App\Http\Controllers\API\PostController@register');
+Route::post('/login', '\App\Http\Controllers\API\PostController@login');
+//Route::get('/login', '\App\Http\Controllers\API\PostController@login')->name('login');
+Route::middleware('auth:api')
+    ->get('/posts', '\App\Http\Controllers\API\PostController@index'); // With Auth

@@ -4,7 +4,10 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Models\Post;
+use App\Models\User;
+use Illuminate\Support\Facades\Validator;
 
 class PostController extends Controller
 {
@@ -70,5 +73,45 @@ class PostController extends Controller
     {
         Post::find($id)->delete();
         return response(['message' => 'The Post #'.$id.' has been deleted!']);
+    }
+
+    /*
+     * PASSPORT LOGIN & REGISTER
+     */
+
+    public function register(Request $request) {
+
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'email' => 'required|email',
+            'password' => 'required',
+            'c_password' => 'required|same:password',
+        ]);
+
+        if($validator->fails()) {
+            return response()->json($validator->errors(), 202);
+        }
+
+        $input = $request->all();
+        $input['password'] = bcrypt($input['password']);
+
+        $user = User::create($input);
+
+        $responseArray = [];
+        $responseArray['token'] = $user->createToken('LapiSPA')->accessToken;
+        $responseArray['name'] = $user->name;
+        return response()->json($responseArray, 200);
+    }
+
+    public function login(Request $request) {
+        if(Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+            $user = Auth::user();
+            $responseArray = [];
+            $responseArray['token'] = $user->createToken('LapiSPA')->accessToken;
+            $responseArray['name'] = $user->name;
+            return response()->json($responseArray, 200);
+        } else {
+            return response()->json(['error' => 'Unauthenticated'], 203);
+        }
     }
 }
