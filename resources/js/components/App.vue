@@ -1,11 +1,11 @@
 <template>
     <div>
-        <navbar0 />
+        <navbar-section />
         <div class="container">
             <div class="content">
                 <posts />
             </div>
         </div>
-        <footer0 />
+        <footer-section />
     </div>
 </template>
