@@ -102,7 +102,7 @@ export default {
                     this.makePagination(response.data)
                 })
                 .catch(error => {
-                    console.log(error)
+                    console.log(error.response)
                     this.errored = true;
                 })
                 .finally(() => this.loading = false)

@@ -2012,7 +2012,7 @@ __webpack_require__.r(__webpack_exports__);
 
         _this.makePagination(response.data);
       })["catch"](function (error) {
-        console.log(error);
+        console.log(error.response);
         _this.errored = true;
       })["finally"](function () {
         return _this.loading = false;

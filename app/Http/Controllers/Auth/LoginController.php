@@ -76,7 +76,9 @@ class LoginController extends Controller
             $responseArray = [];
             $responseArray['token'] = $user->createToken('LapiSPA')->accessToken;
             $responseArray['name'] = $user->name;
-            return response()->json($responseArray, 200);
+            return response()
+                ->json($responseArray, 200)
+                ->header('Authorization', $responseArray['token']);
         } else {
             return response()->json(['error' => 'Unauthenticated'], 203);
         }

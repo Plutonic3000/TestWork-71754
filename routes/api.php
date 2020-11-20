@@ -14,19 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::apiResource('posts', '\App\Http\Controllers\API\PostController'); // Without Auth
+//Route::apiResource('posts', '\App\Http\Controllers\API\PostController'); // Without Auth
 
 /*
  * PASSPORT ROUTES
  */
 
 Route::post('register', '\App\Http\Controllers\Auth\LoginController@register');
-Route::post('login', '\App\Http\Controllers\Auth\LoginController@login');
+Route::post('login', '\App\Http\Controllers\Auth\LoginController@login');//->name('login');
 Route::get('login', '\App\Http\Controllers\Auth\LoginController@login')->name('login');
-Route::middleware('auth:api')->post('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::middleware('auth:api')->get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-//Route::middleware('auth:api')->get('posts', '\App\Http\Controllers\API\PostController@index'); // With Auth
-
+Route::middleware('auth:api')->get('posts', '\App\Http\Controllers\API\PostController@index'); // With Auth
 Route::middleware('auth:api')->get('user', function (Request $request) {
     return $request->user();
-});
+})->name('user');
