@@ -1,11 +1,11 @@
 <template>
     <div>
-        <navbar-section />
+        <v-navbar />
         <div class="container">
             <div class="content">
-                <posts />
+                <v-posts />
             </div>
         </div>
-        <footer-section />
+        <v-footer />
     </div>
 </template>

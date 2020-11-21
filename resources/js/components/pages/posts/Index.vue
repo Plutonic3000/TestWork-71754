@@ -30,7 +30,7 @@
             <i @click.prevent="clearMessage(index)" class="btn float-right text-dark fa fa-times p-0"></i>
         </div>
 
-        <validation-errors v-if="validationErrors" :errors="validationErrors"></validation-errors>
+        <v-validation-errors v-if="validationErrors" :errors="validationErrors"></v-validation-errors>
 
         <div v-if="loading" class="alert alert-warning" role="alert">
             Loading...
@@ -124,7 +124,7 @@ export default {
             .then(response => {
                 this.getPosts()
                 this.pushMessage(response.data.message)
-                console.log(response)
+                //console.log(response)
             })
             .catch(error => {
                 console.log(error)
