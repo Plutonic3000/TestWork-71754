@@ -18,4 +18,14 @@ Route::group(['prefix' => 'account'], function() {
     })->name('profile');
 });
 
+Route::group([
+    'prefix' => 'admin',
+    'middleware' => ['auth:api', 'scope:do_anything'],
+], function () {
+    Route::apiResource('posts', '\App\Http\Controllers\API\PostController');
+    Route::get('blog', function (Request $request) {
+        return $request->user();
+    });
+});
+
 Route::apiResource('posts', '\App\Http\Controllers\API\PostController');
