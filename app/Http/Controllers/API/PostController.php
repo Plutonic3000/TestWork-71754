@@ -4,10 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use App\Models\Post;
-use App\Models\User;
-use Illuminate\Support\Facades\Validator;
 
 class PostController extends Controller
 {
@@ -34,17 +31,6 @@ class PostController extends Controller
         $post->create($request->only(['title', 'descr']));
 
         return response(['message' => 'New Post has been created successfully!']);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
     }
 
     /**

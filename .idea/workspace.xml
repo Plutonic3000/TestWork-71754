@@ -11,25 +11,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22fa5d18-0ab0-4f45-9a6b-9cb21e27ba72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/APIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/AdminUserSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/views/Account.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/views/Admin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/views/Mainpage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/views/auth/Register.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/pages/posts/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/pages/posts/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/parts/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/parts/Navbar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +188,12 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js/views" />
+      <recent name="$PROJECT_DIR$/resources/js" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -212,7 +216,13 @@
       <workItem from="1605873745596" duration="8604000" />
       <workItem from="1605883860517" duration="548000" />
       <workItem from="1605949514298" duration="4846000" />
-      <workItem from="1605959555002" duration="13653000" />
+      <workItem from="1605959555002" duration="13768000" />
+      <workItem from="1605976639088" duration="3928000" />
+      <workItem from="1606057837958" duration="382000" />
+      <workItem from="1606072268725" duration="239000" />
+      <workItem from="1610446893157" duration="971000" />
+      <workItem from="1610447940700" duration="388000" />
+      <workItem from="1610448541346" duration="788000" />
     </task>
     <servers />
   </component>
@@ -233,36 +243,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1082" y="261" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605880391339">
-      <screen x="0" y="23" width="1920" height="971" />
-    </state>
-    <state x="1082" y="261" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.971@0.23.1920.971" timestamp="1605880391339" />
-    <state x="837" y="268" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605952676878">
-      <screen x="0" y="23" width="1920" height="969" />
-    </state>
-    <state x="837" y="268" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1920.969@0.23.1920.969" timestamp="1605952676878" />
-    <state x="837" y="269" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1920.971@0.23.1920.971" timestamp="1605879206821" />
-    <state width="1043" height="190" key="GridCell.Tab.0.bottom" timestamp="1605690392000">
-      <screen x="0" y="23" width="1920" height="968" />
-    </state>
-    <state width="1043" height="190" key="GridCell.Tab.0.bottom/0.23.1920.968@0.23.1920.968" timestamp="1605690392000" />
-    <state width="1043" height="190" key="GridCell.Tab.0.center" timestamp="1605690391999">
-      <screen x="0" y="23" width="1920" height="968" />
-    </state>
-    <state width="1043" height="190" key="GridCell.Tab.0.center/0.23.1920.968@0.23.1920.968" timestamp="1605690391999" />
-    <state width="1043" height="190" key="GridCell.Tab.0.left" timestamp="1605690391998">
-      <screen x="0" y="23" width="1920" height="968" />
-    </state>
-    <state width="1043" height="190" key="GridCell.Tab.0.left/0.23.1920.968@0.23.1920.968" timestamp="1605690391998" />
-    <state width="1043" height="190" key="GridCell.Tab.0.right" timestamp="1605690391999">
-      <screen x="0" y="23" width="1920" height="968" />
-    </state>
-    <state width="1043" height="190" key="GridCell.Tab.0.right/0.23.1920.968@0.23.1920.968" timestamp="1605690391999" />
-    <state x="804" y="146" key="SettingsEditor" timestamp="1605960180575">
-      <screen x="0" y="23" width="1920" height="969" />
-    </state>
-    <state x="804" y="146" key="SettingsEditor/0.23.1920.969@0.23.1920.969" timestamp="1605960180575" />
   </component>
 </project>

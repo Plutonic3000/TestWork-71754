@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'LAPISPA'),
+    'name' => env('APP_NAME', 'LARAVEL_VUEJS_REST_SPA'),
 
     /*
     |--------------------------------------------------------------------------
