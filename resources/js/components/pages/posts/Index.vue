@@ -40,8 +40,8 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Title</th>
-                <th scope="col">Descr</th>
-                <th scope="col">Action</th>
+                <th scope="col">Text</th>
+                <th scope="col">Actions</th>
             </tr>
             </thead>
             <tbody>

@@ -3,45 +3,51 @@
         <footer class="container py-5">
             <div class="row">
                 <div class="col-12 col-md">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
-                    <small class="d-block mb-3 text-muted">© 2017-2019</small>
+                    <svg width="27" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+                    </svg>
+                    <small class="d-block mb-3 text-muted">© TestWork 71754, 2021</small>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Features</h5>
+                    <h5>Some footer links</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Cool stuff</a></li>
-                        <li><a class="text-muted" href="#">Random feature</a></li>
-                        <li><a class="text-muted" href="#">Team feature</a></li>
-                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                        <li><a class="text-muted" href="#">Another one</a></li>
-                        <li><a class="text-muted" href="#">Last time</a></li>
+                        <li><a class="text-muted" href="#">Footer link one</a></li>
+                        <li><a class="text-muted" href="#">Footer link one</a></li>
+                        <li><a class="text-muted" href="#">Footer link one</a></li>
+                        <li><a class="text-muted" href="#">Footer link one</a></li>
+                        <li><a class="text-muted" href="#">Footer link one</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Resources</h5>
+                    <h5>Some footer links</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Resource</a></li>
-                        <li><a class="text-muted" href="#">Resource name</a></li>
-                        <li><a class="text-muted" href="#">Another resource</a></li>
-                        <li><a class="text-muted" href="#">Final resource</a></li>
+                        <li><a class="text-muted" href="#">Footer link two</a></li>
+                        <li><a class="text-muted" href="#">Footer link two</a></li>
+                        <li><a class="text-muted" href="#">Footer link two</a></li>
+                        <li><a class="text-muted" href="#">Footer link two</a></li>
+                        <li><a class="text-muted" href="#">Footer link two</a></li>
+                        <li><a class="text-muted" href="#">Footer link two</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Resources</h5>
+                    <h5>Some footer links</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Business</a></li>
-                        <li><a class="text-muted" href="#">Education</a></li>
-                        <li><a class="text-muted" href="#">Government</a></li>
-                        <li><a class="text-muted" href="#">Gaming</a></li>
+                        <li><a class="text-muted" href="#">Footer link three</a></li>
+                        <li><a class="text-muted" href="#">Footer link three</a></li>
+                        <li><a class="text-muted" href="#">Footer link three</a></li>
+                        <li><a class="text-muted" href="#">Footer link three</a></li>
+                        <li><a class="text-muted" href="#">Footer link three</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>About</h5>
+                    <h5>Some footer links</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Team</a></li>
-                        <li><a class="text-muted" href="#">Locations</a></li>
-                        <li><a class="text-muted" href="#">Privacy</a></li>
-                        <li><a class="text-muted" href="#">Terms</a></li>
+                        <li><a class="text-muted" href="#">Footer link four</a></li>
+                        <li><a class="text-muted" href="#">Footer link four</a></li>
+                        <li><a class="text-muted" href="#">Footer link four</a></li>
+                        <li><a class="text-muted" href="#">Footer link four</a></li>
+                        <li><a class="text-muted" href="#">Footer link four</a></li>
+                        <li><a class="text-muted" href="#">Footer link four</a></li>
                     </ul>
                 </div>
             </div>
