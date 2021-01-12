@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Mainpage from './views/Mainpage';
+import Records from './views/Records';
 
 Vue.use(VueRouter);
 
@@ -8,7 +8,7 @@ const routes = [
     {
         path: '/',
         name: 'mainpage',
-        component: Mainpage
+        component: Records
     },
     {
         path: '/account',
@@ -28,6 +28,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
+    mode: 'history',
     routes: routes,
     linkActiveClass: 'active'
 });
